@@ -1,8 +1,18 @@
 
 export const ToggleModule = () => {
-
-    //Write solution to the Toggle task inside this ToggleModule function.
-    console.log('checking toggle...');
     
+    let btn = document.querySelector('#toggleBtn');
+
+    btn.addEventListener("click", function(e){
+     let toggle = document.querySelector('#toggle');
+     if (toggle.className === "off"){
+        toggle.className = "on";
+        toggle.innerText = "ON"
+     } else{
+        toggle.className = "off";
+        toggle.innerText = "OFF"
+     }
+
+      });
 }
 
