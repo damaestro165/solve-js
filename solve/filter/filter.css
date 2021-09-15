@@ -1,2 +1,8 @@
 
 /* Add any relevant style here */
+.noDisplay{
+    display: none;
+}
+.display{
+        display: inline;
+}
